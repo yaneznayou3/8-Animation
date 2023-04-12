@@ -1,0 +1,188 @@
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    background-size: cover;
+    animation: anim;/*Задание имени*/
+    animation-duration: 4s;/*Продолжительность*/
+}
+
+@keyframes anim {
+    0%{
+        background-image: url("img/littleMan.png");
+    }
+    50%{
+        background-image: url("img/teenager.png");
+    }
+    70%{
+        background-image: url("img/bigMan.png"); 
+    }
+    90%{
+        background-image: url("img/grandfather.png");
+    }
+    100%{
+
+    }
+   
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+    background-size: cover;
+    animation: anim2;/*Задание имени*/
+    animation-duration: 4s;/*Продолжительность*/
+    animation-direction: normal;/*Направление*/
+}
+@keyframes anim2 {
+    from{
+     border-radius: 0%;
+     background-image: url("img/egg.png");
+    }
+    to{
+     border-radius: 50%;
+     background-image: url("img/chicken.png");
+    }
+}
+#div3{
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    animation: anim3;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes anim3{
+    from{
+     transform: scaleX(-1);
+    }
+    to{
+    transform: scaleX(1);
+    }
+}
+#div4{
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    left: 45px;
+
+    
+    
+}
+#div5{
+    width: 60px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    left: 20px;
+    
+}
+#div6{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+    left: 20px;
+    top: -25px;
+    
+}
+#div7{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: anim4;
+    animation-duration: 1s;
+    animation-direction: alternate;/*Анимация вперёд/назад*/
+    animation-iteration-count: infinite;
+  
+    
+}
+@keyframes anim4 {
+    from{
+     border-radius: 0%;
+    
+    }
+    
+
+    to{
+     border-radius: 100%;
+    
+    }
+
+
+}
+#div8{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-delay: 1s;/*Ожидание перед выполнением*/
+    animation: anim5;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+
+    
+    
+}
+@keyframes anim5 {
+    from{
+      background-color: green;
+      border-radius: 50%;
+    
+    }
+
+    50%{
+     background-color: yellow;
+     border-radius: 50%; 
+    }  
+    
+
+    to{
+     
+    background-color: red;
+    border-radius: 50%;
+    }
+
+
+}
+
+#div9{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    
+    animation: anim6;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;/*Завершение анимации*/
+  
+
+
+    
+    
+}
+@keyframes anim6 {
+    from{
+        border-radius: 0%;
+        background-color: yellow;
+        transform: rotate(0deg);
+        left: 0px;
+
+    }
+    50%{
+        border-radius: 50%;
+    }
+    to{
+        background-color: red;
+        border-radius: 50%;
+        transform: rotate(360deg);
+        left: 1500px;
+    }
+}
+
